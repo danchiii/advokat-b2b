@@ -41,6 +41,7 @@ $(function(){
 
 
   // HOME BACKGROUND SLIDESHOW
+    /*
   $(function(){
     jQuery(document).ready(function() {
     $('#home').backstretch([
@@ -48,7 +49,7 @@ $(function(){
        "images/home-bg-slideshow2.jpg",
         ],  {duration: 2000, fade: 750});
     });
-  })
+  })*/
 
 });
 

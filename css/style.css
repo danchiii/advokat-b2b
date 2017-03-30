@@ -43,7 +43,7 @@ hr {
 }
 
 .section-title strong {
-	color: #00C6D7;
+	color: #0000b3;
   	font-size: 56px;
     text-align: center;
 }
@@ -207,7 +207,7 @@ navigation section
     margin-bottom: 0;
 }
 .custom-navbar .navbar-brand  {
-  color: #00c6d7;
+  //color: #00c6d7;
   font-weight: 600;
   font-size: 24px;
 }
@@ -232,7 +232,7 @@ navigation section
   outline: none;
 }
 .custom-navbar .nav li.active > a {
-      color: #00c6d7;
+      color: #d6d6d6;
     }
 .custom-navbar .navbar-toggle {
         border: none;
@@ -251,7 +251,7 @@ navigation section
          }
     .custom-navbar.top-nav-collapse {
             padding: 8px;
-            background: #4B4B4B;
+            //background: #4B4B4B;
         }
 }
 
@@ -262,6 +262,7 @@ home section
 #home {
   background-size: cover;
   background-position: center;
+    background: #0000b3;
   color: #ffffff;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -281,6 +282,7 @@ home section
 #home hr {
   width: 240px;
 }
+/*
 #home .btn {
   background: transparent;
   border: 4px solid #ffffff;
@@ -307,14 +309,14 @@ home section
   	border-radius: 0;
 	background: transparent;
   	color: #ffffff;
-}
+}*/
 
 /* ==========================================================================
 work section
 ========================================================================== */
 #work {
-  background: #3B3B3B;
-  color: #ffffff;
+  //background: #3B3B3B;
+  color: #000000;
   text-align: center;
 }
 .tab-pane{
@@ -342,7 +344,7 @@ work section
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #00c6d7;
+  color: #0000b3;
   cursor: default;
   background-color: transparent;
   border: 1px solid transparent;
@@ -353,7 +355,7 @@ work section
 }
 
 .tab-content a {
-	color: #0CC;
+	color: #0000b3;
 }
 
 .tab-content a:hover, .tab-content a:link {
@@ -367,8 +369,8 @@ work section
 about section
 ========================================================================== */
 #about {
-  background: #3B3B3B;
-  color: #ffffff;
+  //background: #3B3B3B;
+  color: #000000;
 }
 .nav-tabs {
   margin-top: 20px;
@@ -380,7 +382,7 @@ about section
 }
 .nav-tabs > li > a {
 	display: block;
-  	color: #ffffff;
+  	color: #000;
   	font-size: 16px;
   	padding: 10px 20px;
   	border: 0;
@@ -392,7 +394,7 @@ about section
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #00c6d7;
+  color: #0000b3;
   cursor: default;
   background-color: transparent;
   border: 1px solid transparent;
@@ -403,7 +405,7 @@ about section
 }
 
 .tab-content a {
-	color: #0CC;
+	color: #0000b3;
 }
 
 .tab-content a:hover, .tab-content a:link {
@@ -436,7 +438,7 @@ about section
 .filter-wrapper li .selected,
 .filter-wrapper li a:focus,
 .filter-wrapper li a:hover {
-    color: #00c6d7;
+    color: #0000b3;
     outline: none;
   }
 
@@ -483,7 +485,7 @@ contact section
 #contact {
   background: #3B3B3B url('../images/contact-bg.jpg') no-repeat center center;
   background-size: cover;
-  color: #ffffff;
+  color: #000000;
 }
 #contact h2 {
   padding-bottom: 20px;
@@ -596,8 +598,8 @@ media quires for mobile
 }
 
 #dobro {
-  background: #3B3B3B;
-  color: #ffffff;
+  //background: #3B3B3B;
+  color:#000000;
   text-align: center;
 }
 
@@ -605,10 +607,14 @@ a{
     color: white;
 }
 
+#reviews{
+    text-align: center;
+}
+
 
 .btn {
   background: transparent;
-  border: 4px solid #ffffff;
+  border: 4px solid #adadad;
   border-radius: 0;
   color: #ffffff;
   font-size: 15px;
@@ -616,13 +622,16 @@ a{
   margin-top: 40px;
   margin-right: 16px;
   transition: all 0.4s ease-in-out;
+    background-color: #e6e6e6;
 }
 .btn:hover {
-  background: #00c6d7;
+    color: white;color: white;
+  background: #0000b3;
   border-color: transparent;
 }
 .btn-danger {
-  background: #00c6d7;
+    color: white;
+  background: #0000b3;
   border-color: transparent;
 }
 .btn-danger:hover {
@@ -652,4 +661,13 @@ img {
 
 .social-icon li a:hover {
   color: #00c6d7;
+}
+
+.navbar{
+    background: #0000b3;
+
+}
+
+.navbar-header{
+    margin-top: -20px;
 }
