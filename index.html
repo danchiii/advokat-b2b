@@ -37,7 +37,7 @@
     </div>
 </div>
 
-<section class="navbar navbar-fixed-top custom-navbar" role="navigation">
+<section class="navbar navbar-fixed-top custom-navbar top-nav-collapse" style="background-color: #4B4B4B" role="navigation">
 	<div class="container">
 		<div class="navbar-header">
 			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -45,11 +45,10 @@
 				<span class="icon icon-bar"></span>
 				<span class="icon icon-bar"></span>
 			</button>
-			<a href="#" class="navbar-brand"><img src="images/logo.jpg" width="100px" height="50px" > </a>
 		</div>
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#home" class="smoothScroll"> Главная </a></li>
+				<li><a href="#top" class="smoothScroll"> Главная </a></li>
 				<li><a href="#work" class="smoothScroll"> Услуги</a></li>
 				<!--<li><a href="#news" class="smoothScroll"> Новости</a></li>-->
 				<li><a href="#about" class="smoothScroll"> Немного о себе </a></li>
@@ -61,24 +60,34 @@
 	</div>
 </section>
 
-<section>
+<section id="top">
     <div class="wight-div">
-        <br><br><br><br><br><br>
+		<div class="row">
+			<div class="col-md-2 col-sm-12">
+				<img src="images/logo.jpg" width="100px" height="50px"style="    margin: 5%;" >
+			</div>
+			<div class="col-md-7 col-sm-12"></div>
+			<div class="col-md-3 col-sm-12">
+				<h3><i class="icon-phone medium-icon wow bounceIn" data-wow-delay="0.6s"></i> <a href="tel:+7812921082" style="color: black"> 7(812)921082 </a></h3>
+
+			</div>
+		</div>
     </div>
 </section>
 
 <section id="home">
+
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3 col-sm-12">
-                <img src="images/photo.jpg" width="300px" height="500px" >
+                <!--<img src="images/photo.jpg" width="300px" height="500px" >-->
+				 <h3>Ваши проблемы - мои решения</h3>
             </div>
             <div class="col-md-6 col-sm-12">
                 <div class="section-title">
-                    <h2>Юридическое сопровождение деятельности
-                        индивидуальных предпринимателей,
-                        малого и среднего бизнеса
-                    </h2>
+                    <h2 style="color: #00c6d7;">Правовое сопровождение<br>
+						малого и среднего<br>
+					бизнеса					</h2>
                     <hr>
                 </div>
             </div>
@@ -92,77 +101,92 @@
 <section id="work">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12 col-sm-12">
+			<div class="col-md-12 col-sm-12 text-center">
 				<div class="section-title">
-					<strong>Виды деятельности</strong>
-					<!--<h1 class="heading bold">Виды деятельности</h1>-->
+					<strong>Услуги</strong>
 					<hr>
+					<br>
+					<ul class="nav nav-tabs" role="tablist" style="    display: flex;">
+						<li class="active"><a  href="#design" aria-controls="design" role="tab" data-toggle="tab">Правовое сопровождение бизнеса</a></li>
+						<li><a  href="#mobile" aria-controls="mobile" role="tab" data-toggle="tab">Правовой аудит  или «Legal Due Diligence»</a></li>
+						<li><a  href="#social" aria-controls="social" role="tab" data-toggle="tab">Правовая грамотность                    </a></li>
+					</ul>
 				</div>
 			</div>
-<div class="content">
-	
+			<div class="col-md-5 col-sm-12">
+				<img src="images/about-img.jpg" class="img-responsive" alt="about img">
+			</div>
+			<div class="col-md-7 col-sm-12">
 				<!-- Nav tabs -->
-				<ul class="nav nav-tabs" role="tablist">
-					<li class="active smoothScroll btn btn-default"><a  href="#design" aria-controls="design" role="tab" data-toggle="tab">Правовое сопровождение бизнеса</a></li>
-					<li class="smoothScroll btn btn-default"><a  href="#mobile" aria-controls="mobile" role="tab" data-toggle="tab">Правовой аудит  или «Legal Due Diligence»</a></li>
-					<li class="smoothScroll btn btn-default"><a  href="#social" aria-controls="social" role="tab" data-toggle="tab">Правовая грамотность</a></li>
-				</ul>
+
+				<!-- tab panes -->
+				<div class="tab-content" >
+					<div role="tabpanel" class="tab-pane active" id="design">
+						<p>Если вам нужно:</p>
+						<ul>
+							<li>Проверить или составить договор</li>
+							<li>Провести переговоры с контрагентом на своих условиях</li>
+							<li>Разрешить проблему  во внесудебном порядке</li>
+							<li>Представлять ваши интересы в суде</li>
+							<li>Составить исковое заявление, подготовить отзыв, жалобу</li>
+							<li>Сопроводить исполнительное производство</li>
+							<li>Участвовать при проведении проверок государственными органами</li>
+							<li>Консультирование по правовым вопросам</li></ul>
+						<p style="text-align: center">Обращайтесь!</p>
+						<p style="text-align: center">Стоимость правового сопровождения бизнеса от 10 000 рублей</p>
+						<p style="text-align: center">Заказать консультацию</p>
+						<br><br>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="mobile">
+						<ul>
+							<b>Что это?</b>
+							<li>
+								<p>Это правовая оценка соответствия организации или ИП законодательству. Она включает в себя аудит хозяйственной, корпоративной деятельности. </p>
+							</li>
+							<b>Что вы получите проведя правовой аудит своего бизнеса?</b>
+							<li>
+								<p>Ценную информацию, с которой вы избежите крупных потерь, убытков или привлечения к административной или уголовной ответственности.</p>
+							</li>
+							<b>Зачем Вам это надо?</b>
+							<li>
+								<p>Вы максимально снизите предпринимательские риски, связанные с ненадлежащим исполнением обязательств контрагента по договору</p>
+							</li>
+							<li>Избежите претензий контролирующих органов к вашей деятельности и как следствие привлечении организации к административной ответственности с огромными штрафами</li>
+							<li>Снизите риск инициирования судебных процессов</li>
+							<li>Избежите наложения ареста на имущество организации, счетов в банках.</li></ul>
+						<p>Стоимость проведения правового аудита от 15 000 рублей</p>
+						<p style="text-align: center">Заказать аудит </p>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="social">
+						<p>В силу специфики своей работы я часто делюсь необходимой информацией, в том числе, провожу юридические семинары для предпринимателей.</p>
+						<p>Также организовываю правовые семинары как для специалистов, так и для желающих повысить свой уровень правовой грамотности в бизнесе!</p>
+						<p>Вы можете заказать организацию и проведение семинара на актуальную для Вас тему по юридической направленности.</p>
+						<p style="text-align: center">Заказать семинар</p>
+						<br><br><br><br><br><br><br>
+					</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
 				<!--<div class="nav nav-tabs" role="tablist">
 					<a class="smoothScroll btn btn-default" href="#design" aria-controls="design" role="tab" data-toggle="tab">Правовое сопровождение бизнеса</a>
 					<a class="smoothScroll btn btn-default" href="#mobile" aria-controls="mobile" role="tab" data-toggle="tab">Правовой аудит  или «Legal Due Diligence»</a>
 					<a class="smoothScroll btn btn-default" href="#social" aria-controls="social" role="tab" data-toggle="tab">Представительство в суде</a>
 				</div>-->
-				<!-- tab panes -->
-				<div class="tab-content" >
-					<div role="tabpanel" class="tab-pane active" id="design">
-						<p>Если вам нужно:</p>
-                        <ul>
-                            <li>Проверить или составить договор</li>
-                            <li>Провести переговоры с контрагентом на своих условиях</li>
-                            <li>Разрешить проблему  во внесудебном порядке</li>
-                            <li>Представлять ваши интересы в суде</li>
-                            <li>Составить исковое заявление, подготовить отзыв, жалобу</li>
-                            <li>Сопроводить исполнительное производство</li>
-                            <li>Участвовать при проведении проверок государственными органами</li>
-                            <li>Консультирование по правовым вопросам</li></ul>
-                        <p style="text-align: center">Обращайтесь!</p>
-                        <p style="text-align: center">Стоимость правового сопровождения бизнеса от 10 000 рублей</p>
-                        <p style="text-align: center">Заказать консультацию</p>
-                        <br><br>
-					</div>
-					<div role="tabpanel" class="tab-pane" id="mobile">
-                        <ul>
-                            <b>Что это?</b>
-                            <li>
-                                <p>Это правовая оценка соответствия организации или ИП законодательству. Она включает в себя аудит хозяйственной, корпоративной деятельности. </p>
-                            </li>
-                            <b>Что вы получите проведя правовой аудит своего бизнеса?</b>
-                            <li>
-                                <p>Ценную информацию, с которой вы избежите крупных потерь, убытков или привлечения к административной или уголовной ответственности.</p>
-                            </li>
-                            <b>Зачем Вам это надо?</b>
-                            <li>
-                                <p>Вы максимально снизите предпринимательские риски, связанные с ненадлежащим исполнением обязательств контрагента по договору</p>
-                            </li>
-                            <li>Избежите претензий контролирующих органов к вашей деятельности и как следствие привлечении организации к административной ответственности с огромными штрафами</li>
-                            <li>Снизите риск инициирования судебных процессов</li>
-                            <li>Избежите наложения ареста на имущество организации, счетов в банках.</li></ul>
-                        <p>Стоимость проведения правового аудита от 15 000 рублей</p>
-                        <p style="text-align: center">Заказать аудит </p>
-					</div>
-					<div role="tabpanel" class="tab-pane" id="social">
-						<p>В силу специфики своей работы я часто делюсь необходимой информацией, в том числе, провожу юридические семинары для предпринимателей.</p>
-                        <p>Также организовываю правовые семинары как для специалистов, так и для желающих повысить свой уровень правовой грамотности в бизнесе!</p>
-                        <p>Вы можете заказать организацию и проведение семинара на актуальную для Вас тему по юридической направленности.</p>
-                        <p style="text-align: center">Заказать семинар</p>
-                        <br><br><br><br><br><br><br>
-					</div>
 
+<!--
 				</div>
 				</div>
 
 		</div>
-	</div>
+	</div>-->
 </section>
 
 <!--<section id="news"></section>-->
@@ -276,10 +300,15 @@
 					<h3><i class="icon-phone medium-icon wow bounceIn" data-wow-delay="0.6s"></i> PHONES</h3>
 					<a href="tel:+7812921082"> 7(812)921082 </a>
 				</div>
+
 			</div>
 
 		</div>
 	</div>
+	<br><br>
+	<div class="container" style="margin-bottom: -5%;">Обращаю ваше внимание, что любые сведения, полученные мной в рамках оказания юридической помощи доверителю, составляют адвокатскую тайну.
+
+		(ст. 8 Федерального закона "Об адвокатской деятельности и адвокатуре Российской Федерации" от 31.05.2002 N 63-ФЗ)</div>
 </section>
 
 <script src="js/jquery.js"></script>
