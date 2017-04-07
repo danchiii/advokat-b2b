@@ -11,12 +11,20 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/et-line-font.css">
 	<link rel="stylesheet" href="css/nivo-lightbox.css">
 	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
 	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/sweetalert2.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css">
+
+	<!--<link href="//static.lpgenerator.ru/media/bootstrap/css/bootstrap.css?v=1491506837" rel="stylesheet" type="text/css" media="screen,projection">-->
+	<link href="//static.lpgenerator.ru/media/css/images/icons/icons.css?v=1491506837" rel="stylesheet" type="text/css">
+	<link href="//static.lpgenerator.ru/media/css/base_anon.css?v=1491506837" rel="stylesheet" type="text/css" media="screen,projection">
+
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
@@ -62,13 +70,13 @@
 
 <section id="top">
     <div class="wight-div">
-		<div class="row">
+		<div class="row" style="margin-top: -0.5%;">
 			<div class="col-md-2 col-sm-12">
-				<img src="images/logo.jpg" width="100px" height="50px"style="    margin: 5%;" >
+				<img src="images/logo.jpg" width="100px" height="50px"style="margin-left: 5%;width: 120px;height: 60px;margin-top: -0;margin-bottom: 0.5%;" >
 			</div>
-			<div class="col-md-7 col-sm-12"></div>
+			<div class="col-md-7 col-sm-12"><h3><i> &#8222;Ваши проблемы - мои решения&#8220;</i></h3></div>
 			<div class="col-md-3 col-sm-12">
-				<h3><i class="icon-phone medium-icon wow bounceIn" data-wow-delay="0.6s"></i> <a href="tel:+7812921082" style="color: black"> 7(812)921082 </a></h3>
+				<h3><i class="icon-phone medium-icon wow bounceIn" data-wow-delay="0.6s"></i> <a href="tel:+78129210828" style="color: black"> <h4 style="display: inline;">+7(812)</h4><h3 style="display: inline;"> 921-08-28</h3> </a></h3>
 
 			</div>
 		</div>
@@ -77,26 +85,23 @@
 
 <section id="home">
 
-	<div class="container">
-		<div class="row">
-			<div class="col-md-3 col-sm-12">
-                <!--<img src="images/photo.jpg" width="300px" height="500px" >-->
-				 <h3>Ваши проблемы - мои решения</h3>
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <div class="section-title">
-                    <h2 style="color: #00c6d7;">Правовое сопровождение<br>
-						малого и среднего<br>
-					бизнеса					</h2>
-                    <hr>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-12">
+	<!--<div class="col-md-7 col-sm-12" style="position: absolute;margin-top: -20%;margin-left: -10%;"><h3><i> &#8222;Ваши проблемы - мои решения&#8220;</i></h3></div>
+-->
+	<div class="container" style="margin-top: -15%">
 
-            </div>
+
+                <div class="section-title">
+					<h2 style="color: #ffffff;">Юридическое сопровождение деятельности</h2>
+						<h2 style="color: #ffffff;">индивидуальных предпринимателей</h2>
+						<h2 style="color: #ffffff;">малого и среднего бизнеса</h2>
+                    <hr>
+					<a class="smoothScroll btn btn-danger" onclick="clicked('Получить решение')">Оставить проблема</a>
+                </div>
+
 	    </div>
     </div>
-</section>
+
+	</section>
 
 <section id="work">
 	<div class="container">
@@ -134,7 +139,7 @@
 							<li>Консультирование по правовым вопросам</li></ul>
 						<p style="text-align: center">Обращайтесь!</p>
 						<p style="text-align: center">Стоимость правового сопровождения бизнеса от 10 000 рублей</p>
-						<p style="text-align: center">Заказать консультацию</p>
+						<p style="text-align: center"><a class="smoothScroll btn btn-danger" onclick="clicked('Заказать консультацию')">Заказать консультацию</a></p>
 						<br><br>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="mobile">
@@ -155,13 +160,13 @@
 							<li>Снизите риск инициирования судебных процессов</li>
 							<li>Избежите наложения ареста на имущество организации, счетов в банках.</li></ul>
 						<p>Стоимость проведения правового аудита от 15 000 рублей</p>
-						<p style="text-align: center">Заказать аудит </p>
+						<p style="text-align: center"><a class="smoothScroll btn btn-danger" onclick="clicked('Заказать аудит')">Заказать аудит</a> </p>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="social">
 						<p>В силу специфики своей работы я часто делюсь необходимой информацией, в том числе, провожу юридические семинары для предпринимателей.</p>
 						<p>Также организовываю правовые семинары как для специалистов, так и для желающих повысить свой уровень правовой грамотности в бизнесе!</p>
 						<p>Вы можете заказать организацию и проведение семинара на актуальную для Вас тему по юридической направленности.</p>
-						<p style="text-align: center">Заказать семинар</p>
+						<p style="text-align: center"><a class="smoothScroll btn btn-danger" onclick="clicked('Заказать семинар')">Заказать семинар</a></p>
 						<br><br><br><br><br><br><br>
 					</div>
 			</div>
@@ -294,17 +299,19 @@
 				<p>Санкт-Петербург, м. Ленинский проспект, бульвар Новаторов дом 1</p>
 				<div class="col-md-6 col-sm-4">
 					<h3><i class="icon-envelope medium-icon wow bounceIn" data-wow-delay="0.6s"></i> Почта </h3>
-					<a href="mailto:adv-subota@yandex.ru">adv-subota@yandex.ru</a>
+					<a href="mailto:adv-subota@yandex.ru">info@advokat-b2b.ru</a>
 				</div>
 				<div class="col-md-6 col-sm-4">
-					<h3><i class="icon-phone medium-icon wow bounceIn" data-wow-delay="0.6s"></i> PHONES</h3>
-					<a href="tel:+7812921082"> 7(812)921082 </a>
+					<h3><i class="icon-phone medium-icon wow bounceIn" data-wow-delay="0.6s"></i> Телефон</h3>
+					<a href="tel:+7812921082"> +7(812) 921-08-28 </a>
 				</div>
 
 			</div>
 
 		</div>
 	</div>
+	<hr style="width: 55%;">
+
 	<br><br>
 	<div class="container" style="margin-bottom: -5%;">Обращаю ваше внимание, что любые сведения, полученные мной в рамках оказания юридической помощи доверителю, составляют адвокатскую тайну.
 

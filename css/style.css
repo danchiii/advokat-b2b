@@ -16,6 +16,7 @@ h1, h2, h3, h4 {
     letter-spacing: 2px;
 }
 
+
 .heading {
     font-size: 20px;
 }
@@ -50,6 +51,7 @@ hr {
 
 .section-title h1 {
     font-size: 24px;
+    letter-spacing: 2px;
 }
 
 .section-title {
@@ -221,6 +223,8 @@ navigation section
     color: #ffffff;
     font-size: 14px;
     font-weight: 500;
+    letter-spacing: 2px;
+
 }
 .custom-navbar .nav li a:hover {
     background: transparent;
@@ -274,12 +278,15 @@ home section
 }
 #home h1 {
     font-size: 40px;
+    letter-spacing: 2px;
 }
 #home h3 {
     font-size: 14px;
+    letter-spacing: 2px;
 }
 #home hr {
     width: 240px;
+    letter-spacing: 2px;
 }
 #home .btn {
     background: transparent;
@@ -305,8 +312,8 @@ home section
 #home .btn-danger:hover {
     border: 4px solid #ffffff;
     border-radius: 0;
-    background: transparent;
-    color: #ffffff;
+    //background: transparent;
+    //color: #ffffff;
 }
 
 /* ==========================================================================
@@ -353,13 +360,15 @@ work section
 }
 
 .tab-content a {
-    color: #0CC;
+    color: white;
 }
 
-.tab-content a:hover, .tab-content a:link {
-    color: #FF0;
+#work .tab-content a:hover, .tab-content a:link {
+    color: white;
     text-decoration: none;
 }
+
+
 
 
 
@@ -407,11 +416,11 @@ about section
 }
 
 .tab-content a {
-    color: #0CC;
+    color: white;
 }
 
 .tab-content a:hover, .tab-content a:link {
-    color: #FF0;
+    color: white;
     text-decoration: none;
 }
 
@@ -662,4 +671,8 @@ img {
     padding-top: 5%;
     font-size: 10px;
     background-color: #EAEAF1;
+}
+
+img{
+    bottom: 0px;
 }
