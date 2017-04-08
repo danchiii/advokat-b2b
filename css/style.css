@@ -1,6 +1,6 @@
 body {
     background: #ffffff;
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     position: relative;
 }
@@ -12,8 +12,11 @@ html, body {
 }
 
 h1, h2, h3, h4 {
-    font-weight: bold;
     letter-spacing: 2px;
+}
+h1{
+    font-size: 60px;
+    color: #337ab7
 }
 
 
@@ -44,7 +47,7 @@ hr {
 }
 
 .section-title strong {
-    color: #00C6D7;
+    color: #337ab7;
     font-size: 56px;
     text-align: center;
 }
@@ -108,7 +111,7 @@ preloader section
     margin: 0 auto;
     width: 20%;
     height: 20%;
-    background-color: #00c6d7;
+    background-color: #337ab7;
     border-radius: 100%;
     -webkit-animation: sk-circleBounceDelay 1.2s infinite ease-in-out;
     animation: sk-circleBounceDelay 1.2s infinite ease-in-out;
@@ -209,12 +212,12 @@ navigation section
     margin-bottom: 0;
 }
 .custom-navbar .navbar-brand  {
-    color: #00c6d7;
+    color: #337ab7;
     font-weight: 600;
     font-size: 24px;
 }
 .custom-navbar .navbar-brand .navbar-toggle {
-    background: #00c6d7;
+    background: #337ab7;
     padding: 4px 6px;
     font-size: 16px;
     color: #fff;
@@ -228,7 +231,7 @@ navigation section
 }
 .custom-navbar .nav li a:hover {
     background: transparent;
-    color: #eeeeee;
+    color:  #337ab7;
 }
 .custom-navbar .nav > li > a:focus {
     background-color: transparent;
@@ -236,14 +239,14 @@ navigation section
     outline: none;
 }
 .custom-navbar .nav li.active > a {
-    color: #00c6d7;
+    color: #337ab7;
 }
 .custom-navbar .navbar-toggle {
     border: none;
     padding-top: 10px;
 }
 .custom-navbar .navbar-toggle .icon-bar {
-    background: #00c6d7;
+    background: #337ab7;
     border-color: transparent;
 }
 @media(min-width:768px){
@@ -302,15 +305,15 @@ home section
     transition: all 0.4s ease-in-out;
 }
 #home .btn:hover {
-    background: #00c6d7;
+    background: #337ab7;
     border-color: transparent;
 }
 #home .btn-danger {
-    background: #00c6d7;
+    background: #337ab7;
     border-color: transparent;
 }
 #home .btn-danger:hover {
-    border: 4px solid #ffffff;
+    border: 4px solid #EAEAF1;
     border-radius: 0;
     //background: transparent;
     //color: #ffffff;
@@ -320,8 +323,8 @@ home section
 work section
 ========================================================================== */
 #work {
-    background: #3B3B3B;
-    color: #ffffff;
+    background: #EAEAF1;
+    color: #000000;
     text-align: center;
 }
 .tab-pane{
@@ -332,17 +335,30 @@ work section
     border-bottom: 1px solid #606060;
 }
 .nav-tabs > li {
+    letter-spacing: 2px;
     float: left;
     margin-bottom: -1px;
 }
 .nav-tabs > li > a {
-    color: #ffffff;
+    color: #000000;
     font-size: 16px;
     padding: 10px 20px;
     border: 0;
     border-radius: 0;
     display: inline;
 }
+
+.tab-content a:hover {
+    background: #ff9900;
+    border-color: black;
+}
+
+.tab-content a {
+    color: black;
+    background: #ffa500;
+    border-color: #ffa500;
+}
+
 .nav-tabs > li > a:hover {
     background-color: transparent;
 }
@@ -360,11 +376,11 @@ work section
 }
 
 .tab-content a {
-    color: white;
+    color: #000000;
 }
 
 #work .tab-content a:hover, .tab-content a:link {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -386,11 +402,10 @@ about section
 .nav-tabs > li {
     float: left;
     margin-bottom: -1px;
-    margin-left: 5%;
 }
 .nav-tabs > li > a {
     display: inline;
-    color: #ffffff;
+    color: #000000;
     font-size: 16px;
     padding: 10px 20px;
     border: 0;
@@ -404,7 +419,7 @@ about section
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-    color: #00c6d7;
+    color: #337ab7;
     cursor: default;
     background-color: transparent;
     border: 1px solid transparent;
@@ -415,9 +430,7 @@ about section
     padding-top: 20px;
 }
 
-.tab-content a {
-    color: white;
-}
+
 
 .tab-content a:hover, .tab-content a:link {
     color: white;
@@ -449,7 +462,7 @@ about section
 .filter-wrapper li .selected,
 .filter-wrapper li a:focus,
 .filter-wrapper li a:hover {
-    color: #00c6d7;
+    color:#337ab7;
     outline: none;
 }
 
@@ -529,8 +542,8 @@ contact section
     height: 40px;
 }
 #contact input[type="submit"] {
-    background: #00c6d7;
-    border: 3px solid #00c6d7;
+    background: #337ab7;
+    border: 3px solid #337ab7;
     letter-spacing: 1px;
     margin-top: 18px;
     height: 50px;
@@ -563,7 +576,7 @@ contact section
     transition: all 0.4s ease-in-out;
 }
 .social-icon li a:hover {
-    color: #00c6d7;
+    color: #337ab7;
 }
 
 @media screen and (min-width: 992px) {
@@ -606,6 +619,11 @@ media quires for mobile
 }
 .content{
     text-align: left;
+}
+
+.container{
+    max-width: 1200px;
+
 }
 
 #dobro {
@@ -664,7 +682,7 @@ img {
 }
 
 .social-icon li a:hover {
-    color: #00c6d7;
+    color: #337ab7;
 }
 
 .wight-div{
@@ -675,4 +693,16 @@ img {
 
 img{
     bottom: 0px;
+}
+
+.nav-tabs > li > a:hover{
+    color: #337ab7;
+}
+
+.navbar-header{
+    visibility: collapse;
+}
+
+.top-nav-collapse > .container> .navbar-header{
+    visibility: inherit;
 }

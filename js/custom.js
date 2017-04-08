@@ -118,7 +118,7 @@ function clicked( stroka){
                 log('Request failed', error)
             });*/
 
-       fetch('http://lending-advokat.azurewebsites.net/api/values/'+JSON.stringify(data), {
+       fetch('https://lending-advokat.azurewebsites.net/api/values/'+JSON.stringify(data), {
             method: 'GET',
             mode: 'no-cors',
             headers: {
