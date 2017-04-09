@@ -65,7 +65,7 @@ hr {
     font-size: 32px !important;
 }
 
-#work,#about, #contact, #dobro {
+#work,#about, #contact, #dobro, #reviews{
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -241,10 +241,7 @@ navigation section
 .custom-navbar .nav li.active > a {
     color: #337ab7;
 }
-.custom-navbar .navbar-toggle {
-    border: none;
-    padding-top: 10px;
-}
+
 .custom-navbar .navbar-toggle .icon-bar {
     background: #337ab7;
     border-color: transparent;
@@ -319,6 +316,7 @@ home section
     //color: #ffffff;
 }
 
+
 /* ==========================================================================
 work section
 ========================================================================== */
@@ -359,6 +357,7 @@ work section
     border-color: #ffa500;
 }
 
+
 .nav-tabs > li > a:hover {
     background-color: transparent;
 }
@@ -384,13 +383,26 @@ work section
     text-decoration: none;
 }
 
+.tab-content a:active {
+    color: black;
+    background: #ffa500;
+    border-color: #ffa500;
+}
+
+.btn-danger.active.focus, .btn-danger.active:focus, .btn-danger.active:hover, .btn-danger:active.focus, .btn-danger:active:focus, .btn-danger:active:hover, .open>.dropdown-toggle.btn-danger.focus, .open>.dropdown-toggle.btn-danger:focus, .open>.dropdown-toggle.btn-danger:hover{
+    color: black;
+    background: #ffa500;
+    border-color: #ffa500;
+}
 
 
 
 
-/* ==========================================================================
-about section
-========================================================================== */
+
+
+    /* ==========================================================================
+    about section
+    ========================================================================== */
 #about {
     background: #3B3B3B;
     color: #ffffff;
@@ -686,7 +698,7 @@ img {
 }
 
 .wight-div{
-    padding-top: 5%;
+    padding-top: 58px;
     font-size: 10px;
     background-color: #EAEAF1;
 }
@@ -699,10 +711,82 @@ img{
     color: #337ab7;
 }
 
-.navbar-header{
-    visibility: collapse;
+.navbar-header>a>img{
+    opacity: 0;
 }
 
-.top-nav-collapse > .container> .navbar-header{
-    visibility: inherit;
+.top-nav-collapse > .container> .navbar-header>a> img{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+/* =======================
+navbar
+===========================*/
+
+#nav{
+    padding: 4px;
+}
+
+#nav img{
+    padding: initial;
+    max-width: initial;
+    transition-property: opacity;
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0, 0, 0, 0.96);
+    transition-delay: 0.2s;
+}
+
+#nav ul{
+    padding-top: 0.5%;
+}
+
+.custom-navbar .navbar-toggle {
+    border: none;
+    padding-top: 10px;
+}
+
+
+
+
+#top img{
+    padding-left: 20%;
+    max-height: 15ch;
+}
+#top .container{
+    padding-top: 2px;
+    padding-left: inherit;
+    padding-right: inherit;
+}
+#top p{
+    margin: auto;
+}
+#top h3,p{
+    text-align: center;
+}
+#top .mob{
+    padding-left: 0px;
+    max-height: 30ch;
+}
+
+
+
+
+#reviews {
+    background: #EAEAF1;
+    color: #000000;
+    text-align: center;
+}
+#reviews h2 {
+    padding-bottom: 20px;
+}
+#reviews h3 {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }

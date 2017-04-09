@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="utf-8">
 	<title>Digital Team HTML5 Layout - Tooplate</title>
@@ -45,16 +45,15 @@
     </div>
 </div>
 
-<section class="navbar navbar-fixed-top custom-navbar " style="background-color: #4B4B4B" role="navigation">
-	<div class="container">
+<section id="nav" class="navbar navbar-fixed-top custom-navbar " style="background-color: #4B4B4B" role="navigation">
+	<div class=" container">
 		<div class="navbar-header">
-			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="icon icon-bar"></span>
-				<span class="icon icon-bar"></span>
-				<span class="icon icon-bar"></span>
-			</button>
-			<img src="images/logo1.png" width="80px" height="40px"style="margin-top: -0;margin-bottom: 0.5%;" >
-
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+            </button>
+            <a href="#top" class="smoothScroll"><img  src="images/logo1.png" class=" navbar-brand img-responsive" ></a>
 		</div>
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
@@ -70,16 +69,17 @@
 	</div>
 </section>
 
-<section id="top">
-    <div class="wight-div">
-		<div class="row" style="margin-top: -0.5%;">
-			<div class="col-md-1 col-sm-12">
-				<img src="images/logo.jpg" width="100px" height="50px"style="margin-left: 5%;width: 120px;height: 60px;margin-top: -0;margin-bottom: 0.5%;" >
+<section id="top" class="wight-div">
+    <div class=" container">
+		<div class="row">
+			<div class="col-md-2 col-sm-12 ">
+				<img src="images/logo.jpg" class="img-responsive hidden-xs" >
+				<img src="images/logo.jpg" class="img-responsive visible-xs mob" >
 			</div>
-			<div class="col-md-8 col-sm-12"><h3 style="    margin-left: 4%;">Адвокат Ольга Субота</h3></div>
+			<div class="col-md-7 col-sm-12 hidden-xs"><h3>Адвокат Ольга Субота</h3></div>
 			<div class="col-md-3 col-sm-12">
 				<h3 style="margin-top: initial;"><i class="icon-phone medium-icon wow bounceIn" data-wow-delay="0.6s"></i> <a href="tel:+78129210828" style="color: black; text-decoration: none"> <h4 style="display: inline;">+7(812)</h4><h3 style="display: inline;"> 921-08-28</h3> </a></h3>
-				<p style="    display: inline;left: 28%;position: inherit;">Пн.-Пт. с 9:00 до 18:00 </p>
+				<p class="center-block">Пн.-Пт. с 9:00 до 18:00 </p>
 			</div>
 		</div>
     </div>
@@ -98,7 +98,7 @@
 						<h2 style="color: #ffffff;">малого и среднего бизнеса</h2>
                     <hr>
 					<h3 style="font-size: 18px;"><i> &#8222;Ваши проблемы - мои решения&#8220;</i></h3>
-					<a class="smoothScroll btn btn-danger" onclick="clicked('Получить решение')">Оставить проблема</a>
+					<a class="smoothScroll btn btn-danger" onclick="clickedHome()">Оставить проблема</a>
                 </div>
 
 	    </div>
@@ -131,7 +131,7 @@
 				<!-- tab panes -->
 				<div class="tab-content" >
 					<div role="tabpanel" class="tab-pane active" id="design">
-						<p>Если вам нужно:</p>
+						<b>Если вам нужно:</b>
 						<ul>
 							<li>Проверить или составить договор</li>
 							<li>Провести переговоры с контрагентом на своих условиях</li>
@@ -143,35 +143,34 @@
 							<li>Консультирование по правовым вопросам</li></ul>
 						<p style="text-align: center">Обращайтесь!</p>
 						<p style="text-align: center">Стоимость правового сопровождения бизнеса от 10 000 рублей</p>
-						<p style="text-align: center"><a class="smoothScroll btn btn-danger" onclick="clicked('Заказать консультацию')">Заказать консультацию</a></p>
-						<br><br>
+						<p style="text-align: center"><a class="smoothScroll btn btn-danger" onclick="clickedWork('Заказать консультацию', 'Заказ консультации')">Заказать консультацию</a></p>
+						<div class="hidden-xs"><br><br></div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="mobile">
+						<b>Что это?</b>
 						<ul>
-							<b>Что это?</b>
-							<li>
-								<p>Это правовая оценка соответствия организации или ИП законодательству. Она включает в себя аудит хозяйственной, корпоративной деятельности. </p>
-							</li>
-							<b>Что вы получите проведя правовой аудит своего бизнеса?</b>
-							<li>
-								<p>Ценную информацию, с которой вы избежите крупных потерь, убытков или привлечения к административной или уголовной ответственности.</p>
-							</li>
-							<b>Зачем Вам это надо?</b>
-							<li>
-								<p>Вы максимально снизите предпринимательские риски, связанные с ненадлежащим исполнением обязательств контрагента по договору</p>
-							</li>
+							<li>Это правовая оценка соответствия организации или ИП законодательству. Она включает в себя аудит хозяйственной, корпоративной деятельности.</li>
+						</ul>
+						<b>Что вы получите проведя правовой аудит своего бизнеса?</b>
+						<ul>
+							<li>Ценную информацию, с которой вы избежите крупных потерь, убытков или привлечения к административной или уголовной ответственности.</li>
+						</ul>
+						<b>Зачем Вам это надо?</b>
+						<ul>
+							<li>Вы максимально снизите предпринимательские риски, связанные с ненадлежащим исполнением обязательств контрагента по договору</li>
 							<li>Избежите претензий контролирующих органов к вашей деятельности и как следствие привлечении организации к административной ответственности с огромными штрафами</li>
 							<li>Снизите риск инициирования судебных процессов</li>
-							<li>Избежите наложения ареста на имущество организации, счетов в банках.</li></ul>
+							<li>Избежите наложения ареста на имущество организации, счетов в банках.</li>
+						</ul>
 						<p>Стоимость проведения правового аудита от 15 000 рублей</p>
-						<p style="text-align: center"><a class="smoothScroll btn btn-danger" onclick="clicked('Заказать аудит')">Заказать аудит</a> </p>
+						<p style="text-align: center"><a class="smoothScroll btn btn-danger" onclick="clickedWork('Заказать аудит', 'Заказ аудита')">Заказать аудит</a> </p>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="social">
 						<p>В силу специфики своей работы я часто делюсь необходимой информацией, в том числе, провожу юридические семинары для предпринимателей.</p>
 						<p>Также организовываю правовые семинары как для специалистов, так и для желающих повысить свой уровень правовой грамотности в бизнесе!</p>
 						<p>Вы можете заказать организацию и проведение семинара на актуальную для Вас тему по юридической направленности.</p>
-						<p style="text-align: center"><a class="smoothScroll btn btn-danger" onclick="clicked('Заказать семинар')">Заказать семинар</a></p>
-						<br><br><br><br><br><br><br>
+						<p style="text-align: center"><a class="smoothScroll btn btn-danger" onclick="clickedWork('Заказать семинар', 'Заказ семинара')">Заказать семинар</a></p>
+						<div class="hidden-xs"><br><br><br><br><br><br><br></div>
 					</div>
 			</div>
 		</div>
@@ -221,6 +220,7 @@
 </section>
 
 <section id="reviews">
+	<div class="container">
     <div class="row">
         <div class="col-md-12 col-sm-12">
             <div class="section-title">
@@ -266,7 +266,7 @@
         </div>
     </div>
 
-
+	</div>
 
     </section>
 
