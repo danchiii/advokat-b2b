@@ -54,6 +54,8 @@ $(function(){
 });
 
 
+
+
 function clickedHome(){
     swal.setDefaults({
         input: 'text',
@@ -66,7 +68,7 @@ function clickedHome(){
 
     });
 
-    var steps = [
+    let steps = [
         {
             title:'Введите ваше имя'
         },
@@ -89,14 +91,7 @@ function clickedHome(){
             email:result[1],
             Problem:result[2]
         };
-       fetch('https://lending-advokat.azurewebsites.net/api/values/'+JSON.stringify(data), {
-            method: 'GET',
-            mode: 'no-cors',
-            headers: {
-                'Accept': 'application/x-www-form-urlencoded, text/plain, */*',
-                'Content-Type': 'application/json'
-            },
-        });
+        get(data);
 
         swal(
             'Good job!',
@@ -122,7 +117,7 @@ function clickedWork(text, problem){
 
     });
 
-    var steps = [
+    let steps = [
         {
             title:'Введите ваше имя'
         },
@@ -140,14 +135,7 @@ function clickedWork(text, problem){
             email:result[1],
             Problem:problem
         };
-        fetch('https://lending-advokat.azurewebsites.net/api/values/'+JSON.stringify(data), {
-            method: 'GET',
-            mode: 'no-cors',
-            headers: {
-                'Accept': 'application/x-www-form-urlencoded, text/plain, */*',
-                'Content-Type': 'application/json'
-            },
-        });
+        get(data);
 
         swal(
             'Good job!',
@@ -157,4 +145,17 @@ function clickedWork(text, problem){
     }, function () {
         swal.resetDefaults()
     })
+}
+
+function get(data) {
+    let uri='https://lending-advokat.azurewebsites.net';
+    let url=uri+'api/values/';
+    fetch(url+JSON.stringify(data), {
+        method: 'GET',
+        mode: 'no-cors',
+        headers: {
+            'Accept': 'application/x-www-form-urlencoded, text/plain, */*',
+            'Content-Type': 'application/json'
+        },
+    });
 }

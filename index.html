@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Digital Team HTML5 Layout - Tooplate</title>
+    <title>Адвокат Ольга Субота</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="">
@@ -22,9 +22,9 @@
 
     <!--<link href="//static.lpgenerator.ru/media/bootstrap/css/bootstrap.css?v=1491506837" rel="stylesheet" type="text/css" media="screen,projection">-->
     <link href="//static.lpgenerator.ru/media/css/images/icons/icons.css?v=1491506837" rel="stylesheet" type="text/css">
-    <link href="//static.lpgenerator.ru/media/css/base_anon.css?v=1491506837" rel="stylesheet" type="text/css" media="screen,projection">
+    <!--<link href="//static.lpgenerator.ru/media/css/base_anon.css?v=1491506837" rel="stylesheet" type="text/css" media="screen,projection">-->
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
@@ -60,8 +60,8 @@
                 <li><a href="#top" class="smoothScroll"> Главная </a></li>
                 <li><a href="#work" class="smoothScroll"> Услуги</a></li>
                 <!--<li><a href="#news" class="smoothScroll"> Новости</a></li>-->
-                <li><a href="#about" class="smoothScroll"> Немного о себе </a></li>
                 <li><a href="#reviews" class="smoothScroll"> Клиенты и партнеры </a></li>
+                <li><a href="#about" class="smoothScroll"> Немного о себе </a></li>
                 <li><a href="#dobro" class="smoothScroll"> Документы </a></li>
                 <li><a href="#contact" class="smoothScroll"> Контакты </a></li>
             </ul>
@@ -76,8 +76,8 @@
                 <img src="images/logo.min.png" class="img-responsive hidden-xs" >
                 <img src="images/logo.min.png" class="img-responsive visible-xs mob" >
             </div>
-            <div class="col-md-7 col-sm-12 hidden-xs"><h3>Адвокат Ольга Субота</h3></div>
-            <div class="col-md-3 col-sm-12">
+            <div class="col-md-6 col-sm-12 hidden-xs"><h3 style="text-align: left;">Адвокат Ольга Субота</h3></div>
+            <div class="col-md-4 col-sm-12">
                 <h3 style="margin-top: initial;"><i class="icon-phone medium-icon wow bounceIn" data-wow-delay="0.6s"></i> <a href="tel:+78129210828" style="color: black; text-decoration: none"> <h4 style="display: inline;">+7(812)</h4><h3 style="display: inline;"> 921-08-28</h3> </a></h3>
                 <p class="center-block">Пн.-Пт. с 9:00 до 18:00 </p>
             </div>
@@ -97,7 +97,7 @@
             <h2 style="color: #ffffff;">индивидуальных предпринимателей</h2>
             <h2 style="color: #ffffff;">малого и среднего бизнеса</h2>
             <hr>
-            <h3 style="font-size: 18px;"><i> &#8222;Ваши проблемы - мои решения&#8220;</i></h3>
+            <h3 style="font-size: 18px;">&#171;<i>Ваши проблемы - мои решения</i>&#187;</h3>
             <a class="smoothScroll btn btn-danger" onclick="clickedHome()">Оставить проблему</a>
         </div>
 
@@ -198,25 +198,6 @@
 
 <!--<section id="news"></section>-->
 
-<section id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-sm-12">
-                <div class="section-title">
-                    <h1 style="color: white">Немного о себе</h1>
-                    <hr>
-                </div>
-                <div class="content">
-                    <p>Адвокат Санкт-Петербургской городской коллегии адвокатов. Медиатор.</p>
-                    <p>Юридическая практика: более 13 лет</p>
-                    <p>Занимаюсь преподавательской деятельностью в ВУЗе.</p>
-                    <br><br><br>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
 
 <section id="reviews">
     <div class="container">
@@ -269,6 +250,27 @@
 
 </section>
 
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="section-title">
+                    <h1>Немного о себе</h1>
+                    <hr>
+                </div>
+                <div class="content">
+                    <p>Адвокат Санкт-Петербургской городской коллегии адвокатов. Медиатор.</p>
+                    <p>Юридическая практика: более 13 лет</p>
+                    <p>Занимаюсь преподавательской деятельностью в ВУЗе.</p>
+                    <br><br><br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
 <section id="dobro">
     <div class="container">
         <div class="row">
@@ -278,6 +280,30 @@
                     <hr>
                 </div>
                 <div class="content">
+                    <div class="row">
+
+                        <div class="col-md-3 col-sm-12">
+                            <a class="fancyimage" data-fancybox-group="group" href="images/dok1.jpg">
+                                <img src="images/dok1.jpg" class="img-thumbnail">
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <a class="fancyimage" data-fancybox-group="group" href="images/dok2.jpg">
+                                <img src="images/dok2.jpg" class="img-thumbnail">
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <a class="fancyimage" data-fancybox-group="group" href="images/dok3.jpg">
+                                <img src="images/dok3.jpg" class="img-thumbnail">
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <a class="fancyimage" data-fancybox-group="group" href="images/dok4.jpg">
+                                <img src="images/dok4.jpg" class="img-thumbnail">
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
@@ -285,12 +311,15 @@
     </div>
 </section>
 
+
+
+
 <section id="contact">
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-sm-12 text-center">
                 <div class="section-title">
-                    <h1 style="color: white">Контакты</h1>
+                    <h1>Контакты</h1>
                     <hr>
                 </div>
             </div>
@@ -298,7 +327,6 @@
                 <div id="map" class="map"></div>
             </div>
             <div class="col-md-6 col-sm-12 contact-info">
-                <h2 class="heading bold">Контакты</h2>
                 <p>Санкт-Петербург, м. Ленинский проспект, бульвар Новаторов дом 1</p>
                 <div class="col-md-6 col-sm-4">
                     <h3><i class="icon-envelope medium-icon wow bounceIn" data-wow-delay="0.6s"></i> Почта </h3>
@@ -329,12 +357,22 @@
 <script src="js/nivo-lightbox.min.js"></script>
 <script src="js/jquery.backstretch.min.js"></script>
 <script src="js/wow.min.js"></script>
-<script src="js/custom.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+
+<script src="js/custom.js">$(document).ready(function() {
+    $("a.fancyimage").fancybox();
+});</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("a.fancyimage").fancybox();
+    });
+</script>
 
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script type="text/javascript">
     ymaps.ready(init);
-    var myMap, myPlacemark;
+    let myMap, myPlacemark;
 
     function init(){
         myMap = new ymaps.Map("map", {
