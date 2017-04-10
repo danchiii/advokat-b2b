@@ -425,6 +425,7 @@ work section
 }
 #about h1{
     color: #337ab7;
+    text-align: center;
 }
 .nav-tabs {
     margin-top: 20px;
@@ -531,6 +532,9 @@ media quires for mobile
 
 #about{
     text-align: center;
+}
+#about a{
+    color: black;
 }
 .content{
     text-align: left;
