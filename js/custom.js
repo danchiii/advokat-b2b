@@ -36,7 +36,7 @@ $(function(){
 
   // NIVO LIGHTBOX
   $('.iso-box-section a').nivoLightbox({
-        effect: 'fadeScale',
+        effect: 'fadeScale'
     });
 
 
@@ -46,7 +46,7 @@ $(function(){
     jQuery(document).ready(function() {
     $('#home').backstretch([
        //"images/home-bg-slideshow1.jpg",
-       "images/IMG_2520.jpg",
+       "images/IMG_2520.jpg"
         ],  {duration: 2000, fade: 1000, alignY:top});
     });
   })
@@ -63,12 +63,12 @@ function clickedHome(){
         cancelButtonText:'Отмена',
         showCancelButton: true,
         animation: false,
-        progressSteps: ['1', '2', '3'],
+        progressSteps: ['1', '2', '3']
 
 
     });
 
-    let steps = [
+    var steps = [
         {
             title:'Введите ваше имя'
         },
@@ -79,7 +79,7 @@ function clickedHome(){
             title: 'Опишите проблему',
             input: 'textarea',
             confirmButtonText:'Получить решение',
-            showLoaderOnConfirm: true,
+            showLoaderOnConfirm: true
         }
     ];
 
@@ -112,18 +112,18 @@ function clickedWork(text, problem){
         cancelButtonText:'Отмена',
         showCancelButton: true,
         animation: false,
-        progressSteps: ['1', '2'],
+        progressSteps: ['1', '2']
 
 
     });
 
-    let steps = [
+    var steps = [
         {
             title:'Введите ваше имя'
         },
         {
             title:'Введите ваш email',
-            confirmButtonText:text,
+            confirmButtonText:text
         }
     ];
 
@@ -148,14 +148,14 @@ function clickedWork(text, problem){
 }
 
 function get(data) {
-    let uri='https://lending-advokat.azurewebsites.net';
-    let url=uri+'api/values/';
+    var uri='https://lending-advokat.azurewebsites.net';
+    var url=uri+'api/values/';
     fetch(url+JSON.stringify(data), {
         method: 'GET',
         mode: 'no-cors',
         headers: {
             'Accept': 'application/x-www-form-urlencoded, text/plain, */*',
             'Content-Type': 'application/json'
-        },
+        }
     });
 }

@@ -341,6 +341,12 @@ work section
     color: #000000;
     text-align: center;
 }
+
+
+.navig{
+    display: inline-flex;
+    color: black;
+}
 .tab-pane{
     text-align: left;
 }
@@ -523,6 +529,17 @@ media quires for mobile
         width: 300px;
         height: 400px
     }
+
+    #nav ul, #work .navig{
+        display: grid;
+    }
+
+
+
+    
+    #work .navig{
+        display: grid;
+    }
 }
 
 .map{
@@ -664,11 +681,24 @@ navbar
 
 
 
-
 #dobro img{
     filter: grayscale(80%) opacity(70%) blur(0.8px);
 }
 
 #dobro img:hover{
     filter: grayscale(0%) opacity(100%) blur(0);
+}
+
+.im{
+    height: 100px;
+    margin-bottom: 50px;
+    transition: all .2s ease-in-out;
+}
+
+.im{
+    filter: grayscale(80%) opacity(70%);
+}
+
+.im:hover{
+    filter: grayscale(0%) opacity(100%);
 }

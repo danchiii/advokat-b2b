@@ -113,7 +113,7 @@
                     <h1 >Услуги</h1>
                     <hr>
                     <br>
-                    <ul class="nav nav-tabs" role="tablist" style="display: inline-flex; color: black;   ">
+                    <ul class="nav nav-tabs navig" role="tablist" >
                         <li class="active"><a  href="#design" aria-controls="design" role="tab" data-toggle="tab">Правовое сопровождение бизнеса</a></li>
                         <li><a  href="#mobile" aria-controls="mobile" role="tab" data-toggle="tab">Правовой аудит  или «Legal Due Diligence»</a></li>
                         <li><a  href="#social" aria-controls="social" role="tab" data-toggle="tab">Правовая грамотность                    </a></li>
@@ -208,9 +208,10 @@
                     <hr>
                 </div>
             </div>
+            <!--
             <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="0.9s">
                 <div class="team-wrapper">
-                    <img src="images/test.png" class="img-responsive">
+                    <img src="http://vniio.ru/d/138199/t/v54/images/logo.png" class="img-responsive">
                     <div class="team-des">
                         <h4>Клиент #1</h4>
                         <hr>
@@ -219,7 +220,7 @@
             </div>
             <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.3s">
                 <div class="team-wrapper">
-                    <img src="images/test.png" class="img-responsive">
+                    <img src="http://sktb-technolog.ru/wp-content/uploads/2015/03/watermark.png" class="img-responsive">
                     <div class="team-des">
                         <h4>Клиент #2</h4>
                         <hr>
@@ -228,7 +229,7 @@
             </div>
             <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.6s">
                 <div class="team-wrapper">
-                    <img src="images/test.png" class="img-responsive">
+                    <img src="http://lite-mobile.ru/image/catalog/lm_logo.png" class="img-responsive">
                     <div class="team-des">
                         <h4>Клиент #3</h4>
                         <hr>
@@ -237,12 +238,35 @@
             </div>
             <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.6s">
                 <div class="team-wrapper">
-                    <img src="images/test.png" class="img-responsive">
+                    <img src="http://sevmorgeo.rosgeo.com/sites/all/themes/rosgeo/images/logo_header.png" class="img-responsive">
                     <div class="team-des">
                         <h4>Клиент #4</h4>
                         <hr>
                     </div>
                 </div>
+            </div>
+
+            -->
+
+            <div class="col-md-3 col-sm-6 im">
+                <a href="http://vniio.ru" target="_blank">
+                    <img src="http://vniio.ru/d/138199/t/v54/images/logo.png" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 im">
+                <a href="http://sktb-technolog.ru" target="_blank">
+                    <img src="http://sktb-technolog.ru/wp-content/uploads/2015/03/watermark.png" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 im" data-wow-delay="1.6s">
+                <a href="http://lite-mobile.ru" target="_blank">
+                    <img src="http://lite-mobile.ru/image/catalog/lm_logo.png" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 im" data-wow-delay="1.6s">
+                <a href="http://sevmorgeo.rosgeo.com/ru" target="_blank">
+                    <img src="http://sevmorgeo.rosgeo.com/sites/all/themes/rosgeo/images/logo_header.png" class="img-responsive">
+                </a>
             </div>
         </div>
 
@@ -374,7 +398,7 @@
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script type="text/javascript">
     ymaps.ready(init);
-    let myMap, myPlacemark;
+    var myMap, myPlacemark;
 
     function init(){
         myMap = new ymaps.Map("map", {
