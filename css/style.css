@@ -534,8 +534,6 @@ media quires for mobile
         display: grid;
     }
 
-
-
     
     #work .navig{
         display: grid;
@@ -701,4 +699,12 @@ navbar
 
 .im:hover{
     filter: grayscale(0%) opacity(100%);
+}
+
+@media (max-width: 440px) {
+
+    .im{
+        filter: grayscale(0%) opacity(100%);
+    }
+
 }
