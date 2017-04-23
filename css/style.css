@@ -100,6 +100,10 @@ hr {
 #work,#about, #contact, #dobro, #reviews{
     padding-top: 100px;
     padding-bottom: 100px;
+    min-height: 100vh;
+}
+#contact{
+    min-height: inherit;
 }
 
 
@@ -429,6 +433,11 @@ work section
     color: black;
 
 }
+
+#about a{
+    color: #337ab7;
+}
+
 #about h1{
     color: #337ab7;
     text-align: center;
@@ -547,9 +556,6 @@ media quires for mobile
 
 #about{
     text-align: center;
-}
-#about a{
-    color: black;
 }
 .content{
     text-align: left;
