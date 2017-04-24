@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 .container {
     max-width: 1000px; width: auto; padding: 0 20px;
 }
@@ -43,7 +45,7 @@ input::-webkit-input-placeholder {
 
 body {
     background: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
+    //font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     position: relative;
 }
@@ -453,7 +455,7 @@ work section
 .nav-tabs > li > a {
     display: inline;
     color: #000000;
-    font-size: 16px;
+    font-size: 17px;
     padding: 10px 20px;
     border: 0;
     border-radius: 0;
@@ -662,7 +664,7 @@ navbar
 #top p{
     margin: auto;
 }
-#top h3,p{
+#top h3{
     text-align: center;
 }
 #top .mob{
@@ -713,4 +715,14 @@ navbar
         filter: grayscale(0%) opacity(100%);
     }
 
+}
+
+.gal li:before {
+    content: "\2714 ";
+    margin: 0 1em;
+}
+
+.gal li{
+    list-style-type: none;
+    line-height: 2;
 }

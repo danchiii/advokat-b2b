@@ -57,6 +57,61 @@ $(function(){
 
 
 function clickedHome(){
+
+
+    swal({
+        title: 'Получить решение',
+        html:
+        '<h3>Введите имя</h3>' +
+        '<input type="text" id="name" class="swal2-input">' +
+        '<h3>Введите email</h3>' +
+        '<input type="email" id="emails" class="swal2-input">' +
+        '<h3>Опишите проблему</h3>' +
+        '<textarea id="problem" class="swal2-textarea">',
+        preConfirm: function () {
+
+
+            return new Promise(function (resolve, reject) {
+
+                setTimeout(function() {
+                    var a = $('#emails').val();
+                    console.log(a);
+                    if ($('#emails').val() === 'taken@example.com') {
+                        reject('This email is already taken.')
+                    } else {
+                        resolve([
+                            $('#name').val(),
+                            $('#emails').val(),
+                            $('#problem').val()
+                        ])
+                    }
+                }, 2000)
+
+
+
+            })
+        },
+        confirmButtonText: 'Получить решение',
+        onOpen: function () {
+            $('#swal-input1').focus()
+        }
+    }).then(function (result) {
+        swal(
+            'Отправлено',
+            '',
+            'success'
+        )
+        data={
+            Name:result[0],
+            email:result[1],
+            Problem:result[2]
+        };
+        get(data);
+    }).catch(swal.noop)
+
+
+/*
+    //////////////
     swal.setDefaults({
         input: 'text',
         confirmButtonText: 'Далее',
@@ -100,7 +155,7 @@ function clickedHome(){
         )
     }, function () {
         swal.resetDefaults()
-    })
+    })*/
 }
 
 
@@ -138,8 +193,8 @@ function clickedWork(text, problem){
         get(data);
 
         swal(
-            'Good job!',
-            'You clicked the button!',
+            'Отправлено',
+            '',
             'success'
         )
     }, function () {
