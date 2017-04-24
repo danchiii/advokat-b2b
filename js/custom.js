@@ -203,7 +203,7 @@ function clickedWork(text, problem){
 }
 
 function get(data) {
-    var uri='https://lending-advokat.azurewebsites.net';
+    var uri='https://lending-advokat.azurewebsites.net/';
     var url=uri+'api/values/';
     fetch(url+JSON.stringify(data), {
         method: 'GET',
