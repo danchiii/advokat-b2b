@@ -60,12 +60,12 @@ function clickedHome(){
 
 
     swal({
-        title: 'Получить решение',
+        title: '',
         html:
         '<h3>Введите имя</h3>' +
         '<input type="text" id="name" class="swal2-input">' +
-        '<h3>Введите email</h3>' +
-        '<input type="email" id="emails" class="swal2-input">' +
+        '<h3>Введите email*</h3>' +
+        '<input type="email" id="email" class="swal2-input">' +
         '<h3>Опишите проблему</h3>' +
         '<textarea id="problem" class="swal2-textarea">',
         preConfirm: function () {
@@ -73,24 +73,25 @@ function clickedHome(){
 
             return new Promise(function (resolve, reject) {
 
+
                 setTimeout(function() {
-                    var a = $('#emails').val();
-                    console.log(a);
-                    if ($('#emails').val() === 'taken@example.com') {
-                        reject('This email is already taken.')
-                    } else {
+                    var email = $('#email').val();
+                    if (~email.indexOf('.') && ~email.indexOf('@') && email.length-email.indexOf('@')>3 ) {
                         resolve([
                             $('#name').val(),
-                            $('#emails').val(),
+                            $('#email').val(),
                             $('#problem').val()
                         ])
+                    } else {
+                        reject('Введите действительный email')
                     }
-                }, 2000)
+                }, 200)
 
 
 
             })
         },
+        allowOutsideClick: false,
         confirmButtonText: 'Получить решение',
         onOpen: function () {
             $('#swal-input1').focus()
@@ -161,6 +162,45 @@ function clickedHome(){
 
 
 function clickedWork(text, problem){
+
+
+    swal({
+        title: 'Введите ваш email',
+        input: 'text',
+        confirmButtonText:text,
+        preConfirm: function (email) {
+            return new Promise(function (resolve, reject) {
+                setTimeout(function() {
+                    if (~email.indexOf('.') && ~email.indexOf('@') && email.length-email.indexOf('@')>3 ) {
+                        resolve()
+
+                    }
+                    else reject('Введите действительный email')
+
+                }, 100)
+            })
+        },
+        allowOutsideClick: false
+    })
+    .then(function (email) {
+        data={
+            Name:'',
+            email:email,
+            Problem:problem
+        };
+        get(data);
+        swal({
+            type: 'success',
+            html: 'Отправлено '
+        })
+
+    });
+
+
+
+
+    /**/
+    /*
     swal.setDefaults({
         input: 'text',
         confirmButtonText: 'Далее',
@@ -199,7 +239,7 @@ function clickedWork(text, problem){
         )
     }, function () {
         swal.resetDefaults()
-    })
+    })*/
 }
 
 function get(data) {

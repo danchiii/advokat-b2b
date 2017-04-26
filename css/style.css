@@ -455,34 +455,36 @@ work section
 .nav-tabs > li > a {
     display: inline;
     color: #000000;
-    font-size: 17px;
+    font-size: 16px;
     padding: 10px 20px;
     border: 0;
     border-radius: 0;
     width: 330px;
+    margin-right:0;
+ letter-spacing: 1px;
 }
 .nav-tabs > li > a:hover {
-    background-color: transparent;
-    width: 330px;
+background-color: transparent;
+width: 330px;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-    color: #337ab7;
-    cursor: default;
-    background-color: transparent;
-    border: 1px solid transparent;
-    width: 330px;
+color: #337ab7;
+cursor: default;
+background-color: transparent;
+border: 1px solid transparent;
+width: 330px;
 }
 .tab-content {
-    padding-top: 20px;
+padding-top: 20px;
 }
 
 
 
 .tab-content a:hover, .tab-content a:link {
-    color: white;
-    text-decoration: none;
+color: white;
+text-decoration: none;
 }
 /* ==========================================================================
 contact section
@@ -725,4 +727,8 @@ navbar
 .gal li{
     list-style-type: none;
     line-height: 2;
+}
+
+#work p{
+    font-size: 14px;
 }
