@@ -61,6 +61,7 @@ function clickedHome(){
 
     swal({
         title: '',
+        showCloseButton: true,
         html:
         '<h3>Введите имя</h3>' +
         '<input type="text" id="name" class="swal2-input">' +
@@ -91,7 +92,7 @@ function clickedHome(){
 
             })
         },
-        allowOutsideClick: false,
+        allowOutsideClick: true,
         confirmButtonText: 'Получить решение',
         onOpen: function () {
             $('#swal-input1').focus()
@@ -167,6 +168,7 @@ function clickedWork(text, problem){
     swal({
         title: 'Введите ваш email',
         input: 'text',
+        showCloseButton: true,
         confirmButtonText:text,
         preConfirm: function (email) {
             return new Promise(function (resolve, reject) {
@@ -180,7 +182,7 @@ function clickedWork(text, problem){
                 }, 100)
             })
         },
-        allowOutsideClick: false
+        allowOutsideClick: true
     })
     .then(function (email) {
         data={
