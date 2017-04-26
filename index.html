@@ -13,6 +13,8 @@
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="apple-touch-icon" href="images/apple-touch-favicon.png"/>
 
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
     <link rel="stylesheet" href="css/animate.min.css">
@@ -358,33 +360,39 @@
                     <h1>Документы</h1>
                     <hr>
                 </div>
-                <div class="content">
+                <div class="content carys">
 
                         <div class="col-md-3 col-sm-12">
-                            <a class="fancyimage" data-fancybox-group="group" href="images/dok1.jpg">
-                                <img src="images/dok1.jpg" class="img-thumbnail img-responsive">
+                            <a class="fancyimage" data-fancybox-group="group" href="images/dok/dok1.jpg">
+                                <img src="images/dok/min/dok1.jpg" class="img-thumbnail img-responsive">
                             </a>
                         </div>
                         <div class="col-md-3 col-sm-12">
-                            <a class="fancyimage" data-fancybox-group="group" href="images/dok2.jpg">
-                                <img src="images/dok2.jpg" class="img-thumbnail img-responsive">
+                            <a class="fancyimage" data-fancybox-group="group" href="images/dok/dok2.jpg">
+                                <img src="images/dok/min/dok2.jpg" class="img-thumbnail img-responsive">
                             </a>
                         </div>
                         <div class="col-md-3 col-sm-12">
-                            <a class="fancyimage" data-fancybox-group="group" href="images/dok3.jpg">
-                                <img src="images/dok3.jpg" class="img-thumbnail img-responsive">
+                            <a class="fancyimage" data-fancybox-group="group" href="images/dok/dok3.jpg">
+                                <img src="images/dok/min/dok3.jpg" class="img-thumbnail img-responsive">
                             </a>
                         </div>
                         <div class="col-md-3 col-sm-12">
-                            <a class="fancyimage" data-fancybox-group="group" href="images/dok4.jpg">
-                                <img src="images/dok4.jpg" class="img-thumbnail img-responsive">
+                            <a class="fancyimage" data-fancybox-group="group" href="images/dok/dok4.jpg">
+                                <img src="images/dok/min/dok4.jpg" class="img-thumbnail img-responsive">
                             </a>
                         </div>
+                    <div class="col-md-3 col-sm-12">
+                        <a class="fancyimage" data-fancybox-group="group" href="images/dok/dok5.jpg">
+                            <img src="images/dok/min/dok5.jpg" class="img-thumbnail img-responsive">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 
 
 
@@ -434,6 +442,7 @@
 <script src="js/jquery.backstretch.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="js/slick/slick.min.js"></script>
 
 <script src="js/custom.js">$(document).ready(function() {
     $("a.fancyimage").fancybox();
@@ -442,6 +451,34 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $("a.fancyimage").fancybox();
+    });
+</script>
+
+<script>
+    $('.carys').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 </script>
 <!--
