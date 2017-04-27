@@ -732,3 +732,7 @@ navbar
 #work p{
     font-size: 14px;
 }
+
+#about li{
+    line-height: 28px;
+}
