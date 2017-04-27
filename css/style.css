@@ -704,7 +704,7 @@ navbar
 }
 
 .im{
-    filter: grayscale(80%) opacity(70%);
+   /* filter: grayscale(80%) opacity(70%);*/
 }
 
 .im:hover{
