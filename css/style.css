@@ -339,7 +339,7 @@ home section
     border-radius: 18px;
 }
 #home .back{
-    background: rgba(51, 45, 40, 0.45);
+    background: rgba(0, 0, 0, 0.45);
     padding: 4%;
 }
 
@@ -748,4 +748,14 @@ navbar
 
 #about li{
     line-height: 28px;
+}
+
+.center{
+    text-align: center;
+}
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
 }
