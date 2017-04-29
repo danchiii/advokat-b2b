@@ -1,7 +1,7 @@
 
 // PRELOADER JS
 $(window).load(function(){
-    $('.preloader').fadeOut(1000); // set duration in brackets    
+    $('.preloader').fadeOut(500); // set duration in brackets    
 });
 
 
@@ -41,7 +41,7 @@ $(function(){
 
 
   // HOME BACKGROUND SLIDESHOW
-
+/*
   $(function(){
     jQuery(document).ready(function() {
     $('#home').backstretch([
@@ -49,7 +49,7 @@ $(function(){
        "images/IMG_2520.jpg"
         ],  {duration: 2000, fade: 1000, alignY:top});
     });
-  })
+  })*/
 
 });
 

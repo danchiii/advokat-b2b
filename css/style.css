@@ -45,7 +45,7 @@ input::-webkit-input-placeholder {
 
 body {
     background: #ffffff;
-    //font-family: Arial, Helvetica, sans-serif;
+    /*font-family: Arial, Helvetica, sans-serif;*/
     font-weight: 400;
     position: relative;
 }
@@ -87,7 +87,7 @@ hr {
 }
 
 .section-title h1 {
-    font-size: 24px;
+    font-size: 40px;
     letter-spacing: 2px;
 }
 
@@ -99,7 +99,7 @@ hr {
     font-size: 32px !important;
 }
 
-#work,#about, #contact, #dobro, #reviews{
+#work,#about, #contact, #thanks, #reviews{
     padding-top: 100px;
     padding-bottom: 100px;
     min-height: 100vh;
@@ -240,7 +240,7 @@ preloader section
 navigation section
 ========================================================================== */
 .custom-navbar {
-    background: #545454;
+    background: #4B4B4B;
     margin-bottom: 0;
 }
 .custom-navbar .navbar-brand  {
@@ -272,16 +272,18 @@ navigation section
     background: #337ab7;
     border-color: transparent;
 }
+.custom-navbar img{
+    filter: invert(100%);
+}
 @media(min-width:768px){
     .custom-navbar {
-        background: #545454;
+        background: #4B4B4B;
         padding: 10px;
         border-bottom: 0;
-        background: 0 0;
     }
     .custom-navbar.top-nav-collapse {
         padding: 8px;
-        background: #545454;
+        background: #4B4B4B;
     }
 }
 
@@ -292,6 +294,7 @@ home section
 #home {
     background-size: cover;
     background-position: center;
+    background-image: url(../images/IMG_2520.jpg);
     color: #ffffff;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -313,7 +316,6 @@ home section
 #home .btn {
     background: transparent;
     border: 4px solid #ffffff;
-    border-radius: 0;
     color: #ffffff;
     font-size: 15px;
     font-weight: bold;
@@ -322,6 +324,7 @@ home section
     margin-top: 40px;
     margin-right: 16px;
     transition: all 0.4s ease-in-out;
+    border-radius: 18px;
 }
 #home .btn:hover {
     background: #337ab7;
@@ -333,11 +336,40 @@ home section
 }
 #home .btn-danger:hover {
     border: 4px solid #EAEAF1;
-    border-radius: 0;
-    //background: transparent;
-    //color: #ffffff;
+    border-radius: 18px;
+}
+#home .back{
+    background: rgba(51, 45, 40, 0.45);
+    padding: 4%;
 }
 
+/* ==========================================================================
+top section
+========================================================================== */
+.top-nav-collapse > .container> .navbar-header>a> img{
+    opacity: 1;
+}
+#top img{
+    padding-left: 20%;
+    max-height: 15ch;
+    padding-bottom: 1%;
+}
+#top .container{
+    padding-top: 2px;
+    padding-left: inherit;
+    padding-right: inherit;
+    max-width: 95%;
+}
+#top p{
+    margin: auto;
+}
+#top h3{
+    text-align: center;
+}
+#top .mob{
+    padding-left: 0;
+    max-height: 30ch;
+}
 
 /* ==========================================================================
 work section
@@ -420,6 +452,16 @@ work section
     color: black;
     background: #ffa500;
     border-color: #ffa500;
+}
+#work .btn{
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 12px 42px;
+    margin-top: 40px;
+    margin-right: 16px;
+    transition: all 0.4s ease-in-out;
+    border-radius: 18px;
 }
 
 
@@ -570,12 +612,12 @@ media quires for mobile
 
 }
 
-#dobro {
+#thanks {
     background: #545454;
     color: #ffffff;
     text-align: center;
 }
-#dobro h1{
+#thanks h1{
     color: white;
 }
 
@@ -613,11 +655,6 @@ img{
     opacity: 0;
 }
 
-.top-nav-collapse > .container> .navbar-header>a> img{
-    opacity: 1;
-}
-
-
 
 
 
@@ -652,27 +689,7 @@ navbar
 
 
 
-#top img{
-    padding-left: 20%;
-    max-height: 15ch;
-    padding-bottom: 1%;
-}
-#top .container{
-    padding-top: 2px;
-    padding-left: inherit;
-    padding-right: inherit;
-    max-width: 95%;
-}
-#top p{
-    margin: auto;
-}
-#top h3{
-    text-align: center;
-}
-#top .mob{
-    padding-left: 0;
-    max-height: 30ch;
-}
+
 
 
 
@@ -689,11 +706,11 @@ navbar
 
 
 
-#dobro img{
+#thanks img{
     filter: grayscale(80%) opacity(70%) blur(0.8px);
 }
 
-#dobro img:hover{
+#thanks img:hover{
     filter: grayscale(0%) opacity(100%) blur(0);
 }
 
@@ -701,10 +718,6 @@ navbar
     height: 100px;
     margin-bottom: 50px;
     transition: all .2s ease-in-out;
-}
-
-.im{
-   /* filter: grayscale(80%) opacity(70%);*/
 }
 
 .im:hover{
